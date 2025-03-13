@@ -26,8 +26,8 @@
 
 # 最新动态
 
-- 2025.03.14 开源MoE模型 [TeleChat2-39B-A12B 模型](./MoE/README.md)
-- 2024.12.20 开源 **TeleChat2-35B-32K**
+- 2025.03.14 开源MoE模型 [TeleChat2-39B-A12B 模型](./MoE/README.md)。
+- 2024.12.20 开源 **TeleChat2-35B-32K**。
 - 2024.11.08 开源 **TeleChat2-3B**、**TeleChat2-7B**、**TeleChat2-35B**，该版本模型均具备 **Function Call** 功能。
 - 2024.10.18 开源TeleChat2-35B模型。
 - 2024.9.20 开源TeleChat2-115B模型，该模型是**首个完全国产算力训练并开源的千亿参数模型**。
