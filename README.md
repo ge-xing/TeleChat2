@@ -25,6 +25,8 @@
 - [声明、协议、引用](#声明协议引用)
 
 # 最新动态
+
+- 2025.03.14 开源MOE模型 [TeleChat2-39B-A12B 模型](./MOE/README.md)
 - 2024.12.20 开源 **TeleChat2-35B-32K**
 - 2024.11.08 开源 **TeleChat2-3B**、**TeleChat2-7B**、**TeleChat2-35B**，该版本模型均具备 **Function Call** 功能。
 - 2024.10.18 开源TeleChat2-35B模型。
@@ -43,11 +45,11 @@
     - 采用RingAttention及其他序列切分方式，实现长文训练性能提升；通过ntk-aware+attention-scaling的方式保证训练长度切换时的平稳过渡，以此来保证模型在不同长度数据下的训练效果。
 - 在微调数据方面，我们进行了指令复杂性提升与多样性扩充，通过数据合成和人工标注生成高质量数据，并使用拒绝采样生成多样的推理路径；通过研究一套基于base模型反向选择偏好对齐数据方案，基于适配数据最大限度提升模型效果。
     - 通用能力较TeleChat系列模型提升超过29%，在逻辑推理、总结摘要、长文写作和数学计算上均有大幅提升。
+- 同时，我们也开源了TeleChat2-MOE模型 [TeleChat2-39B-A12B](./MOE/README.md)。
 
 ### 模型结构
 
-我们采用标准的 `Decoder-only` 结构设计了 **TeleChat2** 模型，使用 [Rotary Embedding](https://arxiv.org/pdf/2104.09864.pdf)
-的位置编码方法、使用 [SwiGLU](https://arxiv.org/pdf/2002.05202.pdf)
+我们采用标准的 `Decoder-only` 结构设计了 **TeleChat2** 模型，使用 [Rotary Embedding](https://arxiv.org/pdf/2104.09864.pdf) 的位置编码方法、使用 [SwiGLU](https://arxiv.org/pdf/2002.05202.pdf)
 激活函数来替代GELU激活函数、使用基于 [RMSNorm](https://arxiv.org/abs/1910.07467) 的 Pre-Normalization进行层标准化操作。我们将**TeleChat2**的词嵌入层和输出lm
 head层参数分开，有助于增强训练稳定性和收敛性。我们选择了GQA以节约attention部分的参数量和计算量、提升训练和推理速度。
 
