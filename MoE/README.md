@@ -87,7 +87,7 @@ print(respons)
 
 - MindSpore Transformers：该框架的目标是构建一个大模型训练、微调、评估、推理、部署的全流程开发套件，提供业内主流的Transformer类预训练模型和SOTA下游任务应用，涵盖丰富的并行特性。期望帮助用户轻松的实现大模型训练和创新研发。
 
-**当前星辰语义大模型TeleChat2支持昇腾Atlas 800T A2训练服务器，可基于昇思MindSpore框架以及MindSpore Transformers框架进行模型训练和评测，详情请看[telechat国产化](./tutorial/telechat_国产化运行.md)。如果您对mindsformers相关特性有疑问，也可以查看[mindformers](https://gitee.com/mindspore/mindformers/tree/dev/)。**
+**当前星辰语义大模型TeleChat2支持昇腾Atlas 800T A2训练服务器，可基于昇思MindSpore框架以及MindSpore Transformers框架进行模型训练和评测，详情请看[telechat国产化](../tutorial/telechat_国产化运行.md)。如果您对mindsformers相关特性有疑问，也可以查看[mindformers](https://gitee.com/mindspore/mindformers/tree/dev/)。**
 
 
 
